@@ -1,4 +1,4 @@
-# A simple representation of a bin.  Has number and lower and upper bound
+# A simple representation of a bin.  Has index, bin count and lower and upper bounds
 
 
 class Bin:

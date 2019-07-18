@@ -10,6 +10,7 @@ num_bins = 10
 
 
 # Main entry point. Create the bins. Generate the random numbers and bin them
+# Output the results into a csv file.
 def main():
     bin_manager = BinManager.BinManager(num_bins, min_int, max_int, bin_size)
 

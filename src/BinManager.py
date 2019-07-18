@@ -1,7 +1,7 @@
 import src.Bin as Bin
 
 
-# A simple class for managing bins
+# A class for managing bins.  Bins are stored in an array upon initialization.
 class BinManager:
 
     def __init__(self, num_bins, min_bin_idx, max_bin_idx, bin_size):
