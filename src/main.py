@@ -19,6 +19,8 @@ def main():
         print(res)
 
     bin_manager.print_me()
+    bin_manager.output_me()
+
 
 if __name__ == "__main__":
     main()

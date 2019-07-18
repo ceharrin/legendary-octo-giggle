@@ -29,8 +29,15 @@ class BinManager:
             b = self.bins[idx]
             if b.is_in_bin(res):
                 b.bincrement()
+                break
 
     def print_me(self):
         for idx in range(self.num_bins):
             b = self.bins[idx]
             b.print_me()
+
+    def output_me(self):
+        f = open("histo.txt", 'w')
+        for idx in range(self.num_bins):
+            b = self.bins[idx]
+            b.output_me(f)
