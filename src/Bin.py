@@ -23,4 +23,4 @@ class Bin:
         print()
 
     def output_me(self, file):
-        file.write(str(self.count))
+        file.write(str(self.count) + "\n")
