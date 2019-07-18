@@ -18,9 +18,8 @@ class BinManager:
         curr_bin_min = self.min_int
 
         for y in range(self.num_bins):
-            b = Bin.Bin(y, curr_bin_min, curr_bin_min + self.bin_size)
+            b = Bin.Bin(y, curr_bin_min, curr_bin_min + (self.bin_size - 1))
             self.bins.append(b)
-            b.print_me()
             curr_bin_min += self.bin_size
         return self.bins
 
@@ -37,7 +36,8 @@ class BinManager:
             b.print_me()
 
     def output_me(self):
-        f = open("histo.txt", 'w')
+        f = open("../output/histo.csv", 'w')
+        f.write("Bindex,Lower,Upper,Bin count\n")
         for idx in range(self.num_bins):
             b = self.bins[idx]
             b.output_me(f)

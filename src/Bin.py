@@ -23,4 +23,6 @@ class Bin:
         print()
 
     def output_me(self, file):
-        file.write(str(self.count) + "\n")
+        file.write(
+            str(self.bindex + 1) + "," + str(self.lower_bound) + "," + str(self.upper_bound) + "," + str(
+                self.count) + "\n")
