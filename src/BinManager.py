@@ -4,17 +4,16 @@ import src.Bin as Bin
 # A simple class for managing bins
 class BinManager:
 
-    # Binitialize...
     def __init__(self, num_bins, min_bin_idx, max_bin_idx, bin_size):
         self.bins = []
         self.num_bins = num_bins
         self.min_int = min_bin_idx
         self.max_int = max_bin_idx
         self.bin_size = bin_size
-        self.create_bins()
+        self.binitialize()
 
     # Create the bins used to track the randomly generated numbers
-    def create_bins(self):
+    def binitialize(self):
         curr_bin_min = self.min_int
 
         for y in range(self.num_bins):
