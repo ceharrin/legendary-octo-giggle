@@ -1,7 +1,8 @@
 import src.Bin as Bin
 
 
-# A class for managing bins.  Bins are stored in an array upon initialization.
+# A class for managing bins.
+# Initialize the array of bins using the provided input
 class BinManager:
 
     def __init__(self, num_bins, min_bin_idx, max_bin_idx, bin_size):
@@ -20,8 +21,9 @@ class BinManager:
             b = Bin.Bin(y, curr_bin_min, curr_bin_min + (self.bin_size - 1))
             self.bins.append(b)
             curr_bin_min += self.bin_size
-        return self.bins
 
+    # Bin the random numnber. In this case just increment the count for the
+    # bin
     def bin(self, res):
         for idx in range(self.num_bins):
             b = self.bins[idx]
@@ -29,11 +31,13 @@ class BinManager:
                 b.bincrement()
                 break
 
+    # Output a string summary of me to the console
     def print_me(self):
         for idx in range(self.num_bins):
             b = self.bins[idx]
             b.print_me()
 
+    # Output my data to a file
     def output_me(self, file_name):
         f = open("../output/" + file_name + ".csv", 'w')
         f.write("Bindex,Bin count\n")
