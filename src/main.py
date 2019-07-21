@@ -12,6 +12,12 @@ num_bins = 10
 
 # Main entry point. Create the bins. Generate the random numbers and bin them
 # Output the results into a csv file.
+#
+# This is a naive implementation.  Inputs are not constrained beyond int type checking and
+# string length.  Bin sizes are calculated based upon homework specification and not dynamically
+# determined.
+#
+# File output is not verified.
 def main():
     show_banner()
 
