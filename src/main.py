@@ -24,6 +24,9 @@ num_bins = 10
 # July 2019
 # CSC 540 Homework assignment #3
 # Histograms
+#
+# You can clone the project from: https://github.com/ceharrin/legendary-octo-giggle.git
+# (I let GitHub name the repo....)
 def main():
     show_banner()
 
