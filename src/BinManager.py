@@ -34,9 +34,9 @@ class BinManager:
             b = self.bins[idx]
             b.print_me()
 
-    def output_me(self):
-        f = open("../output/histo.csv", 'w')
-        f.write("Bindex,Lower,Upper,Bin count\n")
+    def output_me(self, file_name):
+        f = open("../output/" + file_name + ".csv", 'w')
+        f.write("Bindex,Bin count\n")
         for idx in range(self.num_bins):
             b = self.bins[idx]
             b.output_me(f)

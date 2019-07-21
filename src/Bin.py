@@ -17,11 +17,9 @@ class Bin:
 
     def print_me(self):
         print("Bindex: " + str(self.bindex))
-        print("\tLower bound: " + str(self.lower_bound))
-        print("\tUpper bound: " + str(self.upper_bound))
+        # print("\tLower bound: " + str(self.lower_bound))
+        # print("\tUpper bound: " + str(self.upper_bound))
         print("\tBinventory count: " + str(self.count) + "\n")
 
     def output_me(self, file):
-        file.write(
-            str(self.bindex + 1) + "," + str(self.lower_bound) + "," + str(self.upper_bound) + "," + str(
-                self.count) + "\n")
+        file.write(str(self.bindex + 1) + "," + str(self.count) + "\n")
