@@ -22,6 +22,6 @@ class Bin:
         print("\tUpper bound: " + str(self.upper_bound))
         print("\tBinventory count: " + str(self.count) + "\n")
 
-    # Output my data to the provided file
+    # Output my data to the given file
     def output_me(self, file):
         file.write(str(self.bindex + 1) + "," + str(self.count) + "\n")

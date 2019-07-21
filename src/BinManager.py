@@ -22,7 +22,7 @@ class BinManager:
             self.bins.append(b)
             curr_bin_min += self.bin_size
 
-    # Bin the random numnber. In this case just increment the count for the
+    # Bin the random number. In this case just increment the count for the
     # bin
     def bin(self, res):
         for idx in range(self.num_bins):
@@ -37,7 +37,7 @@ class BinManager:
             b = self.bins[idx]
             b.print_me()
 
-    # Output my data to a file
+    # Output my data to a csv file to be loaded into Excel
     def output_me(self, file_name):
         f = open("../output/" + file_name + ".csv", 'w')
         f.write("Bindex,Bin count\n")
